@@ -606,92 +606,6 @@ body {
   opacity: 0.65;
 }
 
-
-/* ---------------------------------------------------------
-   3. Sidebar / profile
-   --------------------------------------------------------- */
-
-.sidebar {
-  width: 270px;
-}
-
-.profile-card {
-  text-align: center;
-}
-
-
-/* portrait instead of circular avatar */
-
-.image.avatar {
-  display: block;
-  width: 235px;
-  height: 300px;
-  margin: 0 auto 28px;
-  overflow: hidden;
-
-  border-radius: 22px;
-
-  box-shadow:
-    0 12px 36px rgba(40, 33, 25, 0.10);
-}
-
-.image.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-
-  border-radius: 0;
-}
-
-.site-name {
-  margin-top: 0;
-
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-
-.site-email {
-  margin: 5px 0;
-
-  font-size: 0.82rem;
-  line-height: 1.5;
-
-  opacity: 0.62;
-}
-
-
-/* social buttons */
-
-.social-icons {
-  margin-top: 22px;
-  gap: 12px;
-}
-
-.social-icons a {
-  width: 42px;
-  height: 42px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.social-icons a:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 6px 18px rgba(40, 33, 25, 0.10);
-}
-
-
 /* ---------------------------------------------------------
    4. Hero
    --------------------------------------------------------- */
@@ -1283,36 +1197,7 @@ body {
   }
 
 }
-/* =========================================================
-   FIX 1: Avatar shape
-   ========================================================= */
 
-.profile-card .image.avatar {
-  display: block !important;
-  width: 235px !important;
-  height: 300px !important;
-  margin: 0 auto 28px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-
-  border-radius: 22px !important;
-  background: transparent !important;
-
-  box-shadow: 0 12px 36px rgba(40, 33, 25, 0.10);
-}
-
-.profile-card .image.avatar img {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-
-  object-fit: cover !important;
-  object-position: center top !important;
-
-  border-radius: 22px !important;
-  clip-path: inset(0 round 22px);
-}
 /* =========================================================
    FIX 2: Background timeline
    ========================================================= */
