@@ -4,396 +4,1565 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Lin Zhang | Urban Spatial Systems</title>
   <meta name="description" content="Lin Zhang is a Lecturer at Yunnan University studying urban spatial systems, sustainability, equity, complex networks, remote sensing, and GeoAI.">
-  <meta name="keywords" content="Lin Zhang, urban geography, urban spatial systems, sustainability, equity, complex networks, remote sensing, GeoAI, Yunnan University">
+  <meta name="keywords" content="Lin Zhang, Zhang Lin, 张霖, urban geography, urban spatial systems, sustainability, equity, complex networks, remote sensing, GeoAI, Yunnan University">
+
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
   <link rel="stylesheet" href="assets/css/theme-luka.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", "Noto Sans SC", sans-serif;
+    }
+
+    .section-title-cn {
+      margin-left: 0.45rem;
+      font-size: 0.72em;
+      font-weight: 500;
+      opacity: 0.62;
+    }
+
+    .hero-title {
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title-cn {
+      margin-top: 0;
+      margin-bottom: 1.35rem;
+      font-size: 1.05rem;
+      opacity: 0.68;
+    }
+
+    .research-tagline {
+      margin-top: 1.2rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .research-tagline span {
+      margin: 0 0.45rem;
+      opacity: 0.45;
+    }
+
+    .cn-text {
+      opacity: 0.72;
+    }
+
+    .question-list {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .question-item {
+      padding: 1rem 1.05rem;
+    }
+
+    .question-en {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .question-cn {
+      margin: 0;
+      opacity: 0.72;
+    }
+
+    .topic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.9rem;
+    }
+
+    .topic-tag,
+    .metric-badge {
+      display: inline-block;
+      border: 1px solid rgba(127, 127, 127, 0.22);
+      border-radius: 999px;
+      padding: 0.28rem 0.62rem;
+      font-size: 0.78rem;
+      line-height: 1.25;
+    }
+
+    .join-note {
+      margin-top: 1rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid rgba(127, 127, 127, 0.16);
+    }
+
+    .project-group-title,
+    .pub-year {
+      margin-top: 1.4rem;
+      margin-bottom: 0.65rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .project-en {
+      margin-top: 0.15rem;
+      margin-bottom: 0.25rem;
+      opacity: 0.72;
+    }
+
+    .project-meta {
+      font-size: 0.86rem;
+      opacity: 0.68;
+    }
+
+    .journal-meta {
+      margin-top: 0.45rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .links {
+      margin-top: 0.55rem;
+    }
+
+    .links a {
+      margin-right: 0.8rem;
+    }
+
+    .pub-note {
+      font-size: 0.84rem;
+      opacity: 0.68;
+      margin-bottom: 1rem;
+    }
+
+    .nav-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    @media (max-width: 760px) {
+      .nav-left {
+        gap: 0.65rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body class="theme-luka">
+
   <nav class="top-nav">
     <div class="nav-container">
+
       <div class="nav-left">
-      <a href="./">Home</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#join">Join</a>
-      <a href="#about">About</a>
-    </div>
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#join">Join Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#about">About</a>
+      </div>
+
       <div class="nav-right">
-        <a href="./zh/" class="language-switch">中文</a>
-        <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+        <span class="language-switch">中 / EN</span>
+
+        <button id="themeToggle"
+                class="theme-toggle"
+                title="Toggle theme"
+                aria-label="Toggle theme">
           <i class="fa-solid fa-moon"></i>
         </button>
       </div>
+
     </div>
   </nav>
 
-  <div class="wrapper">
+
+  <div class="wrapper" id="home">
+
     <header class="sidebar">
       <div class="profile-card">
+
         <a class="image avatar">
-          <img src="assets/img/profile.jpg" alt="Lin Zhang">
+          <img src="assets/img/profile.jpg" alt="Lin Zhang / 张霖">
         </a>
-        
+
         <h1 class="site-name">Lin Zhang</h1>
-        <p class="site-email">张霖 · Lecturer</p>
-        <p class="site-email">Yunnan University</p>
+
+        <p class="site-email">
+          张霖 · Lecturer / 讲师
+        </p>
+
+        <p class="site-email">
+          Yunnan University · 云南大学
+        </p>
 
         <div class="social-icons">
-          <a href="mailto:zhanglingis@ynu.edu.cn" title="Email">
+
+          <a href="mailto:zhanglingis@ynu.edu.cn"
+             title="Email">
             <i class="fa-solid fa-envelope"></i>
           </a>
-        
+
           <a href="https://orcid.org/0000-0002-5565-1033"
              title="ORCID"
              target="_blank"
              rel="noopener">
             <i class="ai ai-orcid"></i>
           </a>
-        
+
           <a href="https://github.com/ZhangLin7"
              title="GitHub"
              target="_blank"
              rel="noopener">
             <i class="fa-brands fa-github"></i>
           </a>
-        
+
         </div>
 
       </div>
     </header>
 
+
     <section class="content">
+
+      <!-- HERO -->
       <div class="section" id="about">
-        <h2 class="section-title">Hi, I'm Lin 👋</h2>
-      
+
+        <h2 class="section-title">
+          Hi, I'm Lin 👋
+        </h2>
+
         <div class="section-body">
-      
-          <h1>
+
+          <h1 class="hero-title">
             Understanding how cities take shape — and why it matters.
           </h1>
-      
-          <p>
-            I am a Lecturer at the School of Earth Sciences,
-            Yunnan University.
+
+          <p class="hero-title-cn">
+            理解城市如何形成，以及它为何重要。
           </p>
-      
+
+          <p>
+            I am a Lecturer at the School of Earth Sciences, Yunnan University.
+            <span class="cn-text">
+              现任云南大学地球科学学院讲师。
+            </span>
+          </p>
+
           <p>
             I study how urban spatial systems form and evolve,
             and how their spatial structures shape
-            <strong>sustainability</strong> and <strong>equity</strong>.
+            <strong>sustainability</strong> and
+            <strong>equity</strong>.
+            <span class="cn-text">
+              我的研究关注城市空间系统如何形成与演化，
+              以及空间结构如何影响城市的可持续性与社会公平。
+            </span>
           </p>
-      
+
           <p>
             My work connects urban geography with spatial data,
             complex networks, remote sensing, and GeoAI —
-            not as ends in themselves, but as tools for understanding
-            real urban questions.
+            not as ends in themselves,
+            but as tools for understanding real urban questions.
+            <span class="cn-text">
+              我将城市地理与空间数据、复杂网络、遥感和 GeoAI 相结合，
+              并将这些方法作为理解真实城市问题的工具。
+            </span>
           </p>
-      
-          <p>
-            🌆 Cities &nbsp; · &nbsp;
-            👥 People &nbsp; · &nbsp;
-            🌱 Environment
+
+          <p class="research-tagline">
+            Cities
+            <span>·</span>
+            People
+            <span>·</span>
+            Environment
           </p>
-      
+
           <p>
             <strong>
-              <a href="#research">Explore my research ↓</a>
+              <a href="#research">
+                Explore my research ↓
+              </a>
             </strong>
           </p>
-      
+
         </div>
       </div>
 
-      <div class="section" id="education">
-        <h2 class="section-title">Education</h2>
-      
-        <div class="section-body">
-      
-          <div class="card">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Ghent University" class="institution-logo">
-      
-              <div class="experience-content">
-                <p class="exp-title"><strong>Ghent University</strong></p>
-                <p class="exp-detail">Ph.D. in Geography and Geomatics</p>
-                <p class="exp-period">2023 – 2025 · Belgium 🇧🇪</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="card">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Wuhan University" class="institution-logo">
-      
-              <div class="experience-content">
-                <p class="exp-title"><strong>Wuhan University</strong></p>
-                <p class="exp-detail">Ph.D. in Cartography and Geographic Information Systems</p>
-                <p class="exp-period">2021 – 2025 · China 🇨🇳</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="card">
-            <div class="experience-item">
-              <img src="assets/img/institution.svg" alt="Wuhan University" class="institution-logo">
-      
-              <div class="experience-content">
-                <p class="exp-title"><strong>Wuhan University</strong></p>
-                <p class="exp-detail">M.Eng. in Surveying and Mapping</p>
-                <p class="exp-period">2018 – 2021</p>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </div>
 
-      <div class="section" id="experience">
-        <h2 class="section-title">Experience</h2>
-      
-        <div class="section-body">
-      
-          <div class="card timeline-item">
-            <div class="experience-item">
-      
-              <img src="assets/img/institution.svg" alt="Yunnan University" class="institution-logo">
-      
-              <div class="experience-content">
-                <p class="exp-title"><strong>Yunnan University</strong></p>
-                <p class="exp-detail">
-                  Lecturer · School of Earth Sciences
-                </p>
-                <p class="exp-period">2025 – Present · Kunming, China</p>
-              </div>
-      
-            </div>
-          </div>
-      
-        </div>
-      </div>
-
+      <!-- RESEARCH -->
       <div class="section" id="research">
-        <h2 class="section-title">What I'm trying to understand</h2>
-      
+
+        <h2 class="section-title">
+          Research
+          <span class="section-title-cn">
+            研究方向
+          </span>
+        </h2>
+
         <div class="section-body">
-      
+
           <div class="card project-card">
-            <strong>01 · How do cities take shape?</strong>
+
+            <strong>
+              01 · How do cities take shape?
+            </strong>
+
+            <p class="cn-text">
+              城市是如何形成和演化的？
+            </p>
+
             <p>
               How do urban form, road networks, land use,
-              infrastructure, and spatial interactions shape the
-              structure and evolution of cities?
+              infrastructure, and spatial interactions
+              shape the structure and evolution of cities?
             </p>
+
+            <p class="cn-text">
+              城市形态、道路网络、土地利用、基础设施与空间相互作用
+              如何共同塑造城市空间结构及其演化？
+            </p>
+
+            <div class="topic-tags">
+              <span class="topic-tag">Urban Form</span>
+              <span class="topic-tag">Road Networks</span>
+              <span class="topic-tag">Land Use</span>
+              <span class="topic-tag">Complex Systems</span>
+            </div>
+
           </div>
-      
+
+
           <div class="card project-card">
-            <strong>02 · Does urban form shape sustainability?</strong>
+
+            <strong>
+              02 · Does urban form shape sustainability?
+            </strong>
+
+            <p class="cn-text">
+              城市空间结构如何影响可持续性？
+            </p>
+
             <p>
               How do spatial structures influence heat,
-              carbon emissions, mobility, resource efficiency,
-              and urban resilience?
+              carbon emissions, mobility,
+              resource efficiency, and urban resilience?
             </p>
+
+            <p class="cn-text">
+              城市空间结构如何影响热环境、碳排放、
+              居民出行、资源效率与城市韧性？
+            </p>
+
+            <div class="topic-tags">
+              <span class="topic-tag">Urban Climate</span>
+              <span class="topic-tag">Carbon</span>
+              <span class="topic-tag">Mobility</span>
+              <span class="topic-tag">Resilience</span>
+            </div>
+
           </div>
-      
+
+
           <div class="card project-card">
-            <strong>03 · Who benefits, and who bears the risks?</strong>
-            <p>
-              How are environmental risks, public resources,
-              and opportunities distributed across places and people?
+
+            <strong>
+              03 · Who benefits, and who bears the risks?
+            </strong>
+
+            <p class="cn-text">
+              城市发展的收益与风险由谁承担？
             </p>
+
+            <p>
+              How are environmental risks,
+              public resources,
+              and opportunities distributed
+              across places and people?
+            </p>
+
+            <p class="cn-text">
+              环境风险、公共资源与发展机会
+              如何在不同空间与社会群体之间分配？
+            </p>
+
+            <div class="topic-tags">
+              <span class="topic-tag">Spatial Equity</span>
+              <span class="topic-tag">Accessibility</span>
+              <span class="topic-tag">Environmental Exposure</span>
+              <span class="topic-tag">Spatial Justice</span>
+            </div>
+
           </div>
-      
+
         </div>
       </div>
 
-      <div class="section" id="publications">
-        <h2 class="section-title">Publications</h2>
+
+      <!-- QUESTIONS -->
+      <div class="section" id="questions">
+
+        <h2 class="section-title">
+          Questions
+          <span class="section-title-cn">
+            最近在想的问题 💭
+          </span>
+        </h2>
+
+        <div class="section-body question-list">
+
+          <div class="card question-item">
+
+            <div class="question-en">
+              Why do some cities grow into grids,
+              while others become dendritic?
+            </div>
+
+            <p class="question-cn">
+              为什么有些城市形成规则网格，
+              而另一些城市却呈树枝状生长？
+            </p>
+
+          </div>
+
+
+          <div class="card question-item">
+
+            <div class="question-en">
+              Can urban spatial structure make a city
+              more sustainable — or more unequal?
+            </div>
+
+            <p class="question-cn">
+              城市空间结构会让城市更加可持续，
+              还是加剧不平等？
+            </p>
+
+          </div>
+
+
+          <div class="card question-item">
+
+            <div class="question-en">
+              Who bears the environmental costs
+              of rapid urbanization?
+            </div>
+
+            <p class="question-cn">
+              快速城市化产生的环境代价，
+              最终由谁承担？
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- EDUCATION -->
+      <div class="section" id="education">
+
+        <h2 class="section-title">
+          Education
+          <span class="section-title-cn">
+            教育经历
+          </span>
+        </h2>
+
         <div class="section-body">
+
+          <div class="card">
+
+            <div class="experience-item">
+
+              <img src="assets/img/institution.svg"
+                   alt="Ghent University"
+                   class="institution-logo">
+
+              <div class="experience-content">
+
+                <p class="exp-title">
+                  <strong>
+                    Ghent University · 根特大学
+                  </strong>
+                </p>
+
+                <p class="exp-detail">
+                  Ph.D. in Geography and Geomatics
+                  · 地理学与地理信息科学博士
+                </p>
+
+                <p class="exp-period">
+                  2023 – 2025 · Belgium
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="experience-item">
+
+              <img src="assets/img/institution.svg"
+                   alt="Wuhan University"
+                   class="institution-logo">
+
+              <div class="experience-content">
+
+                <p class="exp-title">
+                  <strong>
+                    Wuhan University · 武汉大学
+                  </strong>
+                </p>
+
+                <p class="exp-detail">
+                  Ph.D. in Cartography and Geographic Information Systems
+                  · 地图学与地理信息系统博士
+                </p>
+
+                <p class="exp-period">
+                  2021 – 2025 · China
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="experience-item">
+
+              <img src="assets/img/institution.svg"
+                   alt="Wuhan University"
+                   class="institution-logo">
+
+              <div class="experience-content">
+
+                <p class="exp-title">
+                  <strong>
+                    Wuhan University · 武汉大学
+                  </strong>
+                </p>
+
+                <p class="exp-detail">
+                  M.Eng. in Surveying and Mapping
+                  · 测绘工程硕士
+                </p>
+
+                <p class="exp-period">
+                  2018 – 2021
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="experience-item">
+
+              <img src="assets/img/institution.svg"
+                   alt="Qingdao University of Technology"
+                   class="institution-logo">
+
+              <div class="experience-content">
+
+                <p class="exp-title">
+                  <strong>
+                    Qingdao University of Technology · 青岛理工大学
+                  </strong>
+                </p>
+
+                <p class="exp-detail">
+                  B.S. in Human Geography and Urban-Rural Planning
+                  · 人文地理与城乡规划学士
+                </p>
+
+                <p class="exp-period">
+                  2014 – 2018
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- EXPERIENCE -->
+      <div class="section" id="experience">
+
+        <h2 class="section-title">
+          Experience
+          <span class="section-title-cn">
+            工作经历
+          </span>
+        </h2>
+
+        <div class="section-body">
+
+          <div class="card timeline-item">
+
+            <div class="experience-item">
+
+              <img src="assets/img/institution.svg"
+                   alt="Yunnan University"
+                   class="institution-logo">
+
+              <div class="experience-content">
+
+                <p class="exp-title">
+                  <strong>
+                    Yunnan University · 云南大学
+                  </strong>
+                </p>
+
+                <p class="exp-detail">
+                  Lecturer, School of Earth Sciences
+                  · 地球科学学院讲师
+                </p>
+
+                <p class="exp-period">
+                  2025 – Present · Kunming, China
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- TEACHING -->
+      <div class="section" id="teaching">
+
+        <h2 class="section-title">
+          Teaching
+          <span class="section-title-cn">
+            教学
+          </span>
+        </h2>
+
+        <div class="section-body">
+
+          <div class="card project-card">
+
+            <p>
+              Course information, teaching materials,
+              and selected student work will be updated here.
+            </p>
+
+            <p class="cn-text">
+              课程信息、教学资料与优秀学生作品将陆续更新。
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- JOIN US -->
+      <div class="section" id="join">
+
+        <h2 class="section-title">
+          Join Us
+          <span class="section-title-cn">
+            加入我们
+          </span>
+        </h2>
+
+        <div class="section-body">
+
+          <div class="card project-card">
+
+            <h3>
+              🎓 Master's Students / 硕士研究生
+            </h3>
+
+            <p>
+              <strong>
+                招生专业方向 / Admission Program
+              </strong>
+            </p>
+
+            <p>
+              <strong>
+                资源与环境工程 · 专业型硕士
+              </strong>
+              <br>
+              Resources and Environmental Engineering
+              · Professional Master's Program
+            </p>
+
+            <p>
+              专业代码 / Program Code：
+              <strong>085700</strong>
+              <br>
+
+              01方向 / Track 01：
+              <strong>
+                资源环境保护与生态修复
+              </strong>
+            </p>
+
+
+            <div class="join-note">
+
+              <p>
+                <strong>
+                  Possible Research Topics / 可开展的研究方向
+                </strong>
+              </p>
+
+              <div class="topic-tags">
+
+                <span class="topic-tag">
+                  Urban Spatial Systems · 城市空间系统
+                </span>
+
+                <span class="topic-tag">
+                  Urban Climate · 城市热环境
+                </span>
+
+                <span class="topic-tag">
+                  Spatial Equity · 空间公平
+                </span>
+
+                <span class="topic-tag">
+                  Complex Networks · 复杂网络
+                </span>
+
+                <span class="topic-tag">
+                  Remote Sensing · 遥感
+                </span>
+
+                <span class="topic-tag">
+                  GeoAI · 地理人工智能
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="join-note">
+
+              <p>
+                <strong>
+                  What matters to me / 我更看重什么
+                </strong>
+              </p>
+
+              <p>
+                <strong>Curiosity</strong>
+                — genuinely interested in how cities work.
+                <br>
+                <span class="cn-text">
+                  <strong>好奇心</strong>
+                  —— 对城市为何形成今天的样子真正感兴趣。
+                </span>
+              </p>
+
+              <p>
+                <strong>Initiative</strong>
+                — willing to learn and explore independently.
+                <br>
+                <span class="cn-text">
+                  <strong>主动性</strong>
+                  —— 愿意主动学习、尝试并解决问题。
+                </span>
+              </p>
+
+              <p>
+                <strong>Persistence</strong>
+                — research rarely works the first time.
+                <br>
+                <span class="cn-text">
+                  <strong>耐心</strong>
+                  —— 能接受研究不会一次成功。
+                </span>
+              </p>
+
+              <p>
+                <strong>Collaboration</strong>
+                — willing to communicate,
+                share, and build together.
+                <br>
+                <span class="cn-text">
+                  <strong>合作</strong>
+                  —— 愿意交流、分享，并共同解决问题。
+                </span>
+              </p>
+
+            </div>
+
+
+            <div class="join-note">
+
+              <p>
+                Prior experience in Python, GIS,
+                remote sensing, or machine learning is welcome,
+                but <strong>not required</strong>.
+                I care more about curiosity,
+                initiative, and the willingness to learn.
+              </p>
+
+              <p class="cn-text">
+                有 Python、GIS、遥感或机器学习基础当然很好，
+                但<strong>不是加入的前提</strong>。
+                相比已经掌握多少工具，
+                我更看重好奇心、主动性和学习意愿。
+              </p>
+
+              <p>
+                <strong>
+                  <a href="mailto:zhanglingis@ynu.edu.cn">
+                    Interested? Get in touch →
+                  </a>
+                </strong>
+                <br>
+                zhanglingis@ynu.edu.cn
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- PROJECTS -->
+      <div class="section" id="projects">
+
+        <h2 class="section-title">
+          Projects
+          <span class="section-title-cn">
+            科研项目
+          </span>
+        </h2>
+
+        <div class="section-body">
+
+          <div class="project-group-title">
+            National Natural Science Foundation of China
+            · 国家自然科学基金
+          </div>
+
+
+          <div class="card project-card">
+
+            <div class="project-title">
+              感知数据集成下居民出行与城市用地失衡交互关系识别及成因推断
+            </div>
+
+            <p class="project-en">
+              Identifying and explaining interactions between resident travel
+              and urban land-use imbalance through integrated sensing data.
+            </p>
+
+            <div class="project-meta">
+              2024 – 2025 · Participant / 参与
+            </div>
+
+          </div>
+
+
+          <div class="card project-card">
+
+            <div class="project-title">
+              自然与人文地理过程耦合的土地利用空间优化配置建模理论与方法
+            </div>
+
+            <p class="project-en">
+              Theory and methods for spatial optimization of land use
+              by coupling natural and human geographic processes.
+            </p>
+
+            <div class="project-meta">
+              2021 – 2022 · Participant / 参与
+            </div>
+
+          </div>
+
+
+          <div class="card project-card">
+
+            <div class="project-title">
+              VIIRS 夜光遥感日数据的时序分析及其在中巴经济走廊社会经济评估中的应用
+            </div>
+
+            <p class="project-en">
+              Time-series analysis of daily VIIRS nighttime lights
+              and applications to socioeconomic assessment
+              of the China–Pakistan Economic Corridor.
+            </p>
+
+            <div class="project-meta">
+              2018 – 2021 · Participant / 参与
+            </div>
+
+          </div>
+
+
+          <div class="project-group-title">
+            National Key R&amp;D Program of China
+            · 国家重点研发计划
+          </div>
+
+
+          <div class="card project-card">
+
+            <div class="project-title">
+              面向可持续发展目标进展评估的夜间灯光遥感关键技术及应用示范
+            </div>
+
+            <p class="project-en">
+              Key nighttime-light remote-sensing technologies
+              and applications for assessing progress
+              toward the Sustainable Development Goals.
+            </p>
+
+            <div class="project-meta">
+              2020 – 2021 · Participant / 参与
+            </div>
+
+          </div>
+
+
+          <div class="project-group-title">
+            Other National Program
+            · 其他专项计划
+          </div>
+
+
+          <div class="card project-card">
+
+            <div class="project-title">
+              国家高分辨率对地观测系统重大专项资助项目（民用）
+            </div>
+
+            <p class="project-en">
+              China High-Resolution Earth Observation System
+              Major Special Project (civil applications).
+            </p>
+
+            <div class="project-meta">
+              2023 – 2024 · Participant / 参与
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- PUBLICATIONS -->
+      <div class="section" id="publications">
+
+        <h2 class="section-title">
+          Publications
+          <span class="section-title-cn">
+            论文发表
+          </span>
+        </h2>
+
+        <div class="section-body">
+
+          <p class="pub-note">
+            Journal impact factors below use the latest publicly available values
+            released in 2026 and may change annually.
+            JCR quartiles are shown where applicable.
+            <br>
+            下列期刊影响因子采用 2026 年发布的最新公开数据，
+            影响因子每年可能发生变化；
+            适用时同时标注 JCR 分区。
+          </p>
+
+
           <div class="publications">
+
             <ol class="bibliography">
-            
+
+
+              <!-- 2025 -->
+              <div class="pub-year">
+                2025
+              </div>
+
+
               <li>
                 <div class="pub-row">
                   <div class="pub-content">
-            
+
                     <div class="title">
                       From grids to dendrites:
-                      Quantifying spatial heterogeneity in urban road networks
+                      Quantifying spatial heterogeneity
+                      in urban road networks
                     </div>
-            
+
                     <div class="author">
-                      <strong>Lin Zhang</strong>, S. Li, Y. Liu, et al.
+                      <strong>Lin Zhang</strong>,
+                      Shenhong Li,
+                      Yaolin Liu,
+                      Haosheng Huang,
+                      Nico Van de Weghe
                     </div>
-            
+
                     <div class="periodical">
                       <em>
-                        <strong>Computers, Environment and Urban Systems</strong>, 2025
-                      </em>
+                        <strong>
+                          Computers, Environment and Urban Systems
+                        </strong>
+                      </em>,
+                      121, 102309.
                     </div>
-            
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 8.9
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1016/j.compenvurbsys.2025.102309"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </li>
-            
-            
+
+
               <li>
                 <div class="pub-row">
                   <div class="pub-content">
-            
+
+                    <div class="title">
+                      Plane segmentation from point clouds
+                      using the detail preserving optimal-vector-field
+                    </div>
+
+                    <div class="author">
+                      Shenhong Li,
+                      <strong>Lin Zhang</strong>,
+                      Wanshou Jiang,
+                      Sander Oude Elberink
+                    </div>
+
+                    <div class="periodical">
+                      <em>
+                        <strong>
+                          Optics &amp; Laser Technology
+                        </strong>
+                      </em>,
+                      185, 112580.
+                    </div>
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 5.2
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1016/j.optlastec.2025.112580"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <!-- 2023 -->
+              <div class="pub-year">
+                2023
+              </div>
+
+
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+
                     <div class="title">
                       How road network transformation may be associated
                       with reduced carbon emissions:
                       An exploratory analysis of 19 major Chinese cities
                     </div>
-            
+
                     <div class="author">
-                      <strong>Lin Zhang</strong>, H. Chen, S. Li, et al.
+                      <strong>Lin Zhang</strong>,
+                      Huiting Chen,
+                      Shenhong Li,
+                      et al.
                     </div>
-            
+
                     <div class="periodical">
                       <em>
-                        <strong>Sustainable Cities and Society</strong>, 2023
-                      </em>
+                        <strong>
+                          Sustainable Cities and Society
+                        </strong>
+                      </em>,
+                      95, 104575.
                     </div>
-            
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 13.3
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1016/j.scs.2023.104575"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </li>
-            
-            
+
+
               <li>
                 <div class="pub-row">
                   <div class="pub-content">
-            
+
+                    <div class="title">
+                      Evaluating public transport performance
+                      to guide public transport planning:
+                      A unified prior method
+                    </div>
+
+                    <div class="author">
+                      <strong>Lin Zhang</strong>,
+                      Yaolin Liu,
+                      Shenhong Li,
+                      et al.
+                    </div>
+
+                    <div class="periodical">
+                      <em>
+                        <strong>
+                          Travel Behaviour and Society
+                        </strong>
+                      </em>,
+                      33, 100605.
+                    </div>
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 5.8
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1016/j.tbs.2023.100605"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+
+                    <div class="title">
+                      WHU-Stereo:
+                      A Challenging Benchmark for Stereo Matching
+                      of High-Resolution Satellite Images
+                    </div>
+
+                    <div class="author">
+                      Shenhong Li,
+                      Sheng He,
+                      San Jiang,
+                      Wanshou Jiang,
+                      <strong>Lin Zhang</strong>
+                    </div>
+
+                    <div class="periodical">
+                      <em>
+                        <strong>
+                          IEEE Transactions on Geoscience and Remote Sensing
+                        </strong>
+                      </em>,
+                      61, 1–14.
+                    </div>
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 9.4
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1109/TGRS.2023.3245205"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+
+                      <a href="https://github.com/Sheng029/WHU-Stereo"
+                         target="_blank"
+                         rel="noopener">
+                        Dataset / Code ↗
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <!-- 2022 -->
+              <div class="pub-year">
+                2022
+              </div>
+
+
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+
+                    <div class="title">
+                      Analysis on Disparity of Regional Development
+                      in Pakistan Under Perspective
+                      of Nighttime Light Remote Sensing
+                    </div>
+
+                    <div class="author">
+                      <strong>Lin Zhang</strong>,
+                      Xi Li
+                    </div>
+
+                    <div class="periodical">
+                      <em>
+                        <strong>
+                          Geomatics and Information Science
+                          of Wuhan University
+                        </strong>
+                      </em>,
+                      47(2), 269–279.
+                    </div>
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Wanfang IF: 2.75
+                      </span>
+
+                      <span class="metric-badge">
+                        Not in JCR
+                      </span>
+
+                      <span class="metric-badge">
+                        EI / CSCD / PKU
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.13203/j.whugis20210057"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+
+              <!-- 2020 -->
+              <div class="pub-year">
+                2020
+              </div>
+
+
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+
                     <div class="title">
                       Spatiotemporal analysis of Venezuela's nighttime light
                       during the socioeconomic crisis
                     </div>
-            
+
                     <div class="author">
-                      <strong>Lin Zhang</strong>, X. Li, F. Chen
+                      <strong>Lin Zhang</strong>,
+                      Xi Li,
+                      Fengrui Chen
                     </div>
-            
+
                     <div class="periodical">
                       <em>
-                        <strong>IEEE JSTARS</strong>, 2020
-                      </em>
+                        <strong>
+                          IEEE Journal of Selected Topics
+                          in Applied Earth Observations and Remote Sensing
+                        </strong>
+                      </em>,
+                      13, 2396–2408.
                     </div>
-            
+
+                    <div class="journal-meta">
+                      <span class="metric-badge">
+                        Latest JIF: 6.3
+                      </span>
+
+                      <span class="metric-badge">
+                        JCR Q1
+                      </span>
+                    </div>
+
+                    <div class="links">
+                      <a href="https://doi.org/10.1109/JSTARS.2020.2995695"
+                         target="_blank"
+                         rel="noopener">
+                        DOI ↗
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </li>
-            
+
             </ol>
+
           </div>
+
         </div>
       </div>
 
-      <div class="section" id="join">
-
-        <h2 class="section-title">Curious about cities? 👀</h2>
-      
-        <div class="section-body">
-      
-          <div class="card project-card">
-      
-            <h3>Come talk.</h3>
-      
-            <p>
-              If you are curious about cities, people, maps,
-              environment, data, networks, remote sensing, or AI,
-              there is probably something interesting we can explore together.
-            </p>
-      
-            <p>
-              You do not need to arrive with a perfect CV
-              or already know Python, GIS, or machine learning.
-              Curiosity and willingness to learn matter more.
-            </p>
-      
-            <p>
-              💭 Ask questions &nbsp;&nbsp;
-              📊 Work with data &nbsp;&nbsp;
-              🛠 Build things
-            </p>
-      
-            <p>
-              <strong>
-                <a href="mailto:zhanglingis@ynu.edu.cn">
-                  Say hello →
-                </a>
-              </strong>
-            </p>
-      
-          </div>
-      
-        </div>
-      </div>
 
     </section>
 
+
     <footer class="site-footer">
+
       <p>
         &copy; 2026 Lin Zhang.
         <br>
-        <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
+
+        <span class="template-credit">
+          <a href="https://github.com/wzsyyh/luka-homepage-template">
+            Luka Homepage Template
+          </a>
+
+          by
+
+          <a href="https://wzsyyh.github.io/">
+            Yuheng Yang
+          </a>
+        </span>
       </p>
+
     </footer>
+
   </div>
 
+
   <script src="assets/js/scale.fix.js"></script>
+
   <script>
     (function() {
-      const themeToggle = document.getElementById('themeToggle');
-      const icon = themeToggle.querySelector('i');
+
+      const themeToggle =
+        document.getElementById('themeToggle');
+
+      const icon =
+        themeToggle.querySelector('i');
+
 
       function setTheme(isDark) {
-        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-        icon.classList.toggle('fa-sun', isDark);
-        icon.classList.toggle('fa-moon', !isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+        document.documentElement.setAttribute(
+          'data-theme',
+          isDark ? 'dark' : 'light'
+        );
+
+        icon.classList.toggle(
+          'fa-sun',
+          isDark
+        );
+
+        icon.classList.toggle(
+          'fa-moon',
+          !isDark
+        );
+
+        localStorage.setItem(
+          'theme',
+          isDark ? 'dark' : 'light'
+        );
       }
 
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
 
-      themeToggle.addEventListener('click', function() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        setTheme(!isDark);
-      });
+      const savedTheme =
+        localStorage.getItem('theme');
+
+      const prefersDark =
+        window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches;
+
+      setTheme(
+        savedTheme
+          ? savedTheme === 'dark'
+          : prefersDark
+      );
+
+
+      themeToggle.addEventListener(
+        'click',
+        function() {
+
+          const isDark =
+            document.documentElement.getAttribute(
+              'data-theme'
+            ) === 'dark';
+
+          setTheme(!isDark);
+
+        }
+      );
+
 
       if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.section').forEach(function(el) {
-          observer.observe(el);
-        });
+        const observer =
+          new IntersectionObserver(
+            function(entries) {
+
+              entries.forEach(
+                function(entry) {
+
+                  if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                      'visible'
+                    );
+
+                    observer.unobserve(
+                      entry.target
+                    );
+
+                  }
+
+                }
+              );
+
+            },
+            {
+              threshold: 0.1
+            }
+          );
+
+
+        document
+          .querySelectorAll('.section')
+          .forEach(
+            function(el) {
+              observer.observe(el);
+            }
+          );
+
       } else {
-        document.querySelectorAll('.section').forEach(function(el) {
-          el.classList.add('visible');
-        });
+
+        document
+          .querySelectorAll('.section')
+          .forEach(
+            function(el) {
+              el.classList.add('visible');
+            }
+          );
+
       }
+
     })();
   </script>
+
 </body>
 </html>
