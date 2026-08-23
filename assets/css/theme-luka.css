@@ -525,3 +525,761 @@ body.theme-luka strong {
     font-size: 13px;
   }
 }
+
+/* =========================================================
+   LIN ZHANG HOMEPAGE — FINAL VISUAL TUNING
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Global layout
+   --------------------------------------------------------- */
+
+body {
+  background: #faf8f4;
+  color: #2b2926;
+}
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.content {
+  max-width: 860px;
+}
+
+.section {
+  margin-bottom: 72px;
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-title::after {
+  width: 92px;
+  height: 3px;
+}
+
+.section-title-cn {
+  font-size: 0.64em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+
+/* ---------------------------------------------------------
+   2. Navigation
+   --------------------------------------------------------- */
+
+.top-nav {
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.nav-left {
+  gap: 1.35rem;
+}
+
+.nav-left a {
+  font-size: 0.92rem;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+}
+
+.nav-left a:hover {
+  transform: translateY(-1px);
+}
+
+.language-switch {
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+
+/* ---------------------------------------------------------
+   3. Sidebar / profile
+   --------------------------------------------------------- */
+
+.sidebar {
+  width: 270px;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+
+/* portrait instead of circular avatar */
+
+.image.avatar {
+  display: block;
+  width: 235px;
+  height: 300px;
+  margin: 0 auto 28px;
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 12px 36px rgba(40, 33, 25, 0.10);
+}
+
+.image.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+
+  border-radius: 0;
+}
+
+.site-name {
+  margin-top: 0;
+
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.site-email {
+  margin: 5px 0;
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+
+  opacity: 0.62;
+}
+
+
+/* social buttons */
+
+.social-icons {
+  margin-top: 22px;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(40, 33, 25, 0.10);
+}
+
+
+/* ---------------------------------------------------------
+   4. Hero
+   --------------------------------------------------------- */
+
+#about {
+  padding-top: 18px;
+}
+
+#about .section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#about .section-title::after {
+  width: 62px;
+}
+
+.hero-title {
+  max-width: 760px;
+
+  margin-top: 26px;
+  margin-bottom: 10px;
+
+  font-size: 3.15rem;
+  font-weight: 700;
+  line-height: 1.12;
+
+  letter-spacing: -0.045em;
+}
+
+.hero-title-cn {
+  margin-bottom: 28px;
+
+  font-size: 1.05rem;
+  line-height: 1.6;
+
+  opacity: 0.52;
+}
+
+#about .section-body > p {
+  max-width: 760px;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.cn-text {
+  color: #8a8379;
+  opacity: 1;
+}
+
+.research-tagline {
+  margin-top: 24px;
+
+  font-size: 0.8rem;
+  font-weight: 650;
+
+  letter-spacing: 0.13em;
+}
+
+.research-tagline span {
+  margin: 0 0.55rem;
+  opacity: 0.28;
+}
+
+
+/* ---------------------------------------------------------
+   5. Research cards
+   --------------------------------------------------------- */
+
+#research .section-body {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#research .project-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 285px;
+
+  padding: 22px;
+
+  border: 1px solid rgba(70, 60, 50, 0.09);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.52);
+
+  box-shadow: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+#research .project-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(198, 110, 70, 0.24);
+
+  box-shadow:
+    0 12px 32px rgba(50, 40, 30, 0.08);
+}
+
+.research-card-title {
+  min-height: 52px;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.research-card-cn {
+  margin-top: 5px;
+  margin-bottom: 14px;
+
+  font-size: 0.86rem;
+  line-height: 1.55;
+
+  color: #9a8f82;
+}
+
+#research .project-card > p {
+  flex-grow: 1;
+
+  margin-top: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+
+  color: #5b554d;
+}
+
+
+/* tags */
+
+.topic-tags {
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.topic-tag {
+  padding: 5px 9px;
+
+  font-size: 0.71rem;
+  font-weight: 500;
+
+  border: 1px solid rgba(198, 110, 70, 0.18);
+  border-radius: 999px;
+
+  background: rgba(198, 110, 70, 0.055);
+}
+
+
+/* ---------------------------------------------------------
+   6. Background timeline
+   --------------------------------------------------------- */
+
+#background .section-body {
+  position: relative;
+}
+
+.background-item {
+  position: relative;
+
+  margin: 0;
+  padding:
+    0
+    0
+    30px
+    30px;
+
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
+/* line */
+
+.background-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 6px;
+  top: 8px;
+  bottom: -4px;
+
+  width: 1px;
+
+  background: rgba(85, 75, 65, 0.18);
+}
+
+
+/* dot */
+
+.background-item::after {
+  content: "";
+
+  position: absolute;
+
+  left: 1px;
+  top: 6px;
+
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: #c76f45;
+
+  box-shadow:
+    0 0 0 4px #faf8f4;
+}
+
+.background-item:last-child::before {
+  display: none;
+}
+
+#background .experience-item {
+  display: block;
+}
+
+#background .experience-content {
+  width: 100%;
+}
+
+#background .exp-title {
+  margin: 0 0 4px;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#background .exp-detail {
+  margin: 0 0 3px;
+
+  font-size: 0.91rem;
+  line-height: 1.5;
+
+  color: #777066;
+}
+
+#background .exp-period {
+  margin: 0;
+
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  color: #c16d48;
+}
+
+
+/* ---------------------------------------------------------
+   7. Teaching
+   --------------------------------------------------------- */
+
+.course-group-title {
+  margin-top: 22px;
+  margin-bottom: 10px;
+
+  font-size: 0.86rem;
+  font-weight: 650;
+
+  color: #857d73;
+}
+
+.course-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.course-item {
+  min-height: 105px;
+
+  padding: 18px 19px;
+
+  border: 1px solid rgba(70, 60, 50, 0.1);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(198, 110, 70, 0.25);
+}
+
+.course-en {
+  font-size: 0.94rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.course-cn {
+  margin-top: 8px;
+
+  font-size: 0.84rem;
+
+  color: #91887e;
+}
+
+
+/* ---------------------------------------------------------
+   8. Join us
+   --------------------------------------------------------- */
+
+#join .project-card {
+  padding: 28px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(198, 110, 70, 0.16);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(198, 110, 70, 0.055),
+      rgba(255, 255, 255, 0.48)
+    );
+
+  box-shadow: none;
+}
+
+.join-block:first-child {
+  padding-top: 0;
+}
+
+.join-block + .join-block {
+  margin-top: 22px;
+  padding-top: 21px;
+
+  border-top:
+    1px solid rgba(70, 60, 50, 0.10);
+}
+
+.join-heading {
+  margin-bottom: 12px;
+
+  font-size: 0.93rem;
+  font-weight: 700;
+}
+
+#join p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.join-contact a {
+  display: inline-block;
+
+  margin-top: 4px;
+
+  font-weight: 650;
+}
+
+
+/* ---------------------------------------------------------
+   9. Projects
+   --------------------------------------------------------- */
+
+.project-group-title {
+  margin-top: 28px;
+  margin-bottom: 8px;
+
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  color: #81786d;
+}
+
+#projects .project-card {
+  padding: 16px 18px;
+
+  border: none;
+  border-left:
+    3px solid rgba(198, 110, 70, 0.35);
+
+  border-radius: 0;
+
+  background: transparent;
+
+  box-shadow: none;
+}
+
+#projects .project-card + .project-card {
+  margin-top: 7px;
+}
+
+.project-title {
+  margin-bottom: 5px;
+
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.project-meta {
+  font-size: 0.78rem;
+
+  color: #91877d;
+}
+
+
+/* ---------------------------------------------------------
+   10. Publications
+   --------------------------------------------------------- */
+
+.pub-year {
+  margin-top: 34px;
+  margin-bottom: 12px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: #c16d48;
+}
+
+.bibliography {
+  padding-left: 0;
+}
+
+.bibliography > li {
+  list-style: none;
+
+  margin-bottom: 28px;
+}
+
+.pub-content .title {
+  margin-bottom: 5px;
+
+  font-size: 0.98rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.pub-content .author {
+  margin-bottom: 4px;
+
+  font-size: 0.86rem;
+  line-height: 1.55;
+
+  color: #655f57;
+}
+
+.pub-content .periodical {
+  font-size: 0.84rem;
+  line-height: 1.5;
+
+  color: #81786f;
+}
+
+.journal-meta {
+  margin-top: 8px;
+
+  gap: 6px;
+}
+
+.metric-badge {
+  padding: 4px 8px;
+
+  font-size: 0.69rem;
+
+  border:
+    1px solid rgba(198, 110, 70, 0.18);
+
+  background:
+    rgba(198, 110, 70, 0.05);
+}
+
+.links {
+  margin-top: 8px;
+}
+
+.links a {
+  margin-right: 12px;
+
+  font-size: 0.79rem;
+  font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   11. Footer
+   --------------------------------------------------------- */
+
+.site-footer {
+  margin-top: 30px;
+
+  font-size: 0.76rem;
+
+  opacity: 0.55;
+}
+
+
+/* ---------------------------------------------------------
+   12. Dark mode
+   --------------------------------------------------------- */
+
+[data-theme="dark"] body {
+  background: #181714;
+}
+
+[data-theme="dark"] .image.avatar {
+  box-shadow:
+    0 12px 36px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .background-item::after {
+  box-shadow:
+    0 0 0 4px #181714;
+}
+
+[data-theme="dark"] #research .project-card,
+[data-theme="dark"] .course-item {
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  border-color:
+    rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] #join .project-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(198, 110, 70, 0.08),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+
+/* ---------------------------------------------------------
+   13. Responsive
+   --------------------------------------------------------- */
+
+@media (max-width: 960px) {
+
+  #research .section-body {
+    grid-template-columns: 1fr;
+  }
+
+  #research .project-card {
+    min-height: auto;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image.avatar {
+    width: 205px;
+    height: 260px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    margin-bottom: 56px;
+  }
+
+}
