@@ -1283,3 +1283,118 @@ body {
   }
 
 }
+/* =========================================================
+   FIX 1: Avatar shape
+   ========================================================= */
+
+.profile-card .image.avatar {
+  display: block !important;
+  width: 235px !important;
+  height: 300px !important;
+  margin: 0 auto 28px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  border-radius: 22px !important;
+  background: transparent !important;
+
+  box-shadow: 0 12px 36px rgba(40, 33, 25, 0.10);
+}
+
+.profile-card .image.avatar img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+
+  border-radius: 22px !important;
+  clip-path: inset(0 round 22px);
+}
+/* =========================================================
+   FIX 2: Background timeline
+   ========================================================= */
+
+#background .section-body {
+  position: relative;
+  overflow: visible;
+}
+
+#background .background-item {
+  position: relative;
+
+  margin: 0 !important;
+  padding: 0 0 30px 42px !important;
+
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+
+  overflow: visible !important;
+}
+
+/* vertical line */
+#background .background-item::before {
+  content: "";
+
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  bottom: -4px;
+
+  width: 1px;
+  background: rgba(85, 75, 65, 0.18);
+}
+
+/* orange dot */
+#background .background-item::after {
+  content: "";
+
+  position: absolute;
+  left: 6px;
+  top: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  background: #c76f45;
+
+  box-shadow: 0 0 0 4px #faf8f4;
+}
+
+#background .background-item:last-child::before {
+  display: none;
+}
+
+#background .experience-item {
+  display: block !important;
+}
+
+#background .experience-content {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+#background .exp-title {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#background .exp-detail {
+  margin: 0 0 3px;
+  font-size: 0.91rem;
+  line-height: 1.5;
+  color: #777066;
+}
+
+#background .exp-period {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #c16d48;
+}
