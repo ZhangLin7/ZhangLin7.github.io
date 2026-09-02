@@ -1,6 +1,6 @@
 /* =========================================================
    LIN ZHANG HOMEPAGE
-   Clean Final Stylesheet
+   Final Clean Stylesheet
    ========================================================= */
 
 
@@ -30,8 +30,6 @@
 }
 
 
-/* Dark mode */
-
 [data-theme="dark"] {
   --bg: #1a1917;
 
@@ -53,8 +51,6 @@
   --shadow: rgba(0, 0, 0, 0.28);
 }
 
-
-/* Follow system dark mode before manual choice */
 
 @media (prefers-color-scheme: dark) {
 
@@ -260,13 +256,10 @@ strong {
 }
 
 
-/* Left profile */
-
 .sidebar {
   position: fixed;
 
   top: 60px;
-
   left: calc(50% - 620px);
 
   width: 300px;
@@ -279,8 +272,6 @@ strong {
   text-align: center;
 }
 
-
-/* Right content */
 
 .content {
   margin-left: 340px;
@@ -317,7 +308,7 @@ strong {
 }
 
 
-/* Circular photo */
+/* Circular avatar */
 
 .image.avatar {
   display: block;
@@ -357,26 +348,66 @@ strong {
 }
 
 
-/* Name */
+/* English name */
 
 .site-name {
   margin:
     0
     0
-    13px;
+    6px;
 
   color: var(--text);
 
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-weight: 700;
 
   line-height: 1.2;
 
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 
 
-/* Supports both old and new HTML classes */
+/* Chinese name */
+
+.site-name-cn {
+  margin-bottom: 16px;
+
+  color: var(--text);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* English position */
+
+.site-position {
+  margin-bottom: 3px;
+
+  color: var(--text-soft);
+
+  font-size: 0.90rem;
+  font-weight: 500;
+
+  line-height: 1.55;
+}
+
+
+/* Chinese position */
+
+.site-position-cn {
+  color: var(--text-soft);
+
+  font-size: 0.90rem;
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* Backward compatibility */
 
 .site-role,
 .site-affiliation,
@@ -392,7 +423,7 @@ strong {
     "Noto Sans SC",
     sans-serif;
 
-  font-size: 0.98rem;
+  font-size: 0.90rem;
   font-weight: 450;
 
   line-height: 1.6;
@@ -403,12 +434,10 @@ strong {
 }
 
 
-/* Highlight Chinese name / university */
-
 .cn-strong {
   color: var(--text);
 
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   font-weight: 600;
 }
 
@@ -422,7 +451,7 @@ strong {
 }
 
 
-/* Social buttons */
+/* Social icons */
 
 .social-icons {
   display: flex;
@@ -568,7 +597,7 @@ strong {
 }
 
 
-/* English research statement */
+/* English research theme */
 
 .hero-title {
   max-width: 820px;
@@ -576,18 +605,18 @@ strong {
   margin:
     16px
     0
-    11px;
+    12px;
 
-  font-size: 2.02rem;
+  font-size: 1.62rem;
   font-weight: 700;
 
-  line-height: 1.23;
+  line-height: 1.28;
 
-  letter-spacing: -0.028em;
+  letter-spacing: -0.018em;
 }
 
 
-/* Chinese research statement */
+/* Chinese research theme */
 
 .hero-title-cn {
   max-width: 820px;
@@ -595,11 +624,11 @@ strong {
   margin:
     0
     0
-    23px;
+    22px;
 
   color: var(--text-soft);
 
-  font-size: 1.20rem;
+  font-size: 1.10rem;
   font-weight: 500;
 
   line-height: 1.7;
@@ -631,7 +660,7 @@ strong {
 
   color: var(--text-soft);
 
-  font-size: 1.02rem !important;
+  font-size: 1rem !important;
   font-weight: 400;
 
   line-height: 1.75 !important;
@@ -826,8 +855,6 @@ strong {
 }
 
 
-/* Vertical line */
-
 .background-item::before {
   content: "";
 
@@ -842,8 +869,6 @@ strong {
   background: var(--border);
 }
 
-
-/* Dot */
 
 .background-item::after {
   content: "";
@@ -1408,14 +1433,21 @@ strong {
 
 
   .site-name {
-    font-size: 1.5rem;
+    font-size: 1.30rem;
   }
 
 
+  .site-name-cn {
+    font-size: 0.95rem;
+  }
+
+
+  .site-position,
+  .site-position-cn,
   .site-role,
   .site-affiliation,
   .site-email {
-    font-size: 0.90rem;
+    font-size: 0.86rem;
   }
 
 
@@ -1437,19 +1469,19 @@ strong {
 
 
   .hero-title {
-    font-size: 1.70rem;
+    font-size: 1.42rem;
 
-    line-height: 1.25;
+    line-height: 1.28;
   }
 
 
   .hero-title-cn {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
   }
 
 
   .hero-cn-paragraph {
-    font-size: 0.95rem !important;
+    font-size: 0.94rem !important;
   }
 
 
